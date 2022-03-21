@@ -1,0 +1,265 @@
+/*class final Css */
+
+
+html{
+    box-sizing: border-box;
+}
+
+*:before,
+*:after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: 'Oswald', sans-serif;
+    margin:0;
+    color:#f4f4f4f4;
+    -webkit-text-stroke-width: .1px; 
+    -webkit-text-stroke-color: rgb(69, 93, 209);
+
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    /*Css smooth Scroll */
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory; 
+
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width:100%;
+    height:100vh;
+    scroll-snap-align: center;
+    
+    
+ }
+
+ section h1{
+    font-size: 3rem;
+ }
+
+ section h2 {
+    font-size: 2rem;
+}
+
+section h3 {
+    font-size: 1.5rem;
+}
+
+ section p{
+    font-size: 1.5rem;
+
+}
+
+/*Header */
+
+
+
+.navbar{
+    position: fixed;
+    top:0;
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    height: 70px;
+    background: #333;
+    
+    
+    
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+    width: 100%;
+    height:70px;
+    justify-content: center;
+    
+
+}
+
+.navbar ul li{
+    margin: 0 3rem;
+    padding: 1.5rem;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color:#f4f4f4f4;
+}
+
+.navbar ul li a:hover {
+        color:rgb(54, 137, 219);
+}
+
+.img-fluid{
+    position:absolute;
+    margin: 0 1rem;
+    padding: 1rem;
+    
+    
+}
+
+/*button container */
+#buttoncontainer{
+     
+    width:320px;
+    height: 150px;
+    position: absolute;
+    top:58vh;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: 400px;
+    }
+
+    #buttonone{
+        padding: 10px;
+        border-radius: 20px;
+        background-color: orange;
+        
+    }
+
+    #buttonone p{
+        color: white;
+    }
+
+    #buttonone a{
+        text-decoration: none;
+
+    }
+
+    #buttonone:hover{
+        background: whitesmoke;
+    }
+
+    #buttontwo{
+    width:320px;
+    height: 150px;
+
+    }
+
+/*landing section */
+
+
+/* home section */
+
+section#home p{
+    font-size: 2.6rem;
+}
+
+section#home{
+    background: url(../img/dragon-in-space.jpg) no-repeat center/ 
+    cover;
+
+    
+   
+}
+
+/*history section */
+
+section#history h1{
+    font-size: 3rem;
+
+}
+
+section#history p{
+    font-size: 2.6rem;
+    
+  /* -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: white; */
+
+}
+
+section#history{
+    background: url(../img/dragon-capsule-5.jpg) no-repeat center/ 
+    cover;
+   
+}
+
+
+/*faqs section */
+
+section#faqs p {
+    font-size: 2.6rem;
+}
+
+section#faqs{
+    background: url(../img/dragoncrew.8k.jpg) no-repeat center/ 
+    cover; 
+}
+
+/* signup page */
+
+#signup{
+    background-color: white;
+    height: 120vh;
+}
+
+/* gallery page */
+
+.gallerybody{
+    background-color:darkgray;
+}
+
+.galleryimg{
+    max-width:100%;
+}
+
+.fadecontainer{
+
+    margin:40px auto;
+    width:70vw;
+    /* Set Max Content Width */
+    max-width:700px;
+}
+
+/* Customize Previous/Next/Dots/Autoplay */
+
+.slick-autoplay-toggle-button,
+.slick-prev .slick-prev-icon, .slick-next .slick-next-icon,
+.slick-dots li button .slick-dot-icon,
+.slick-dots li.slick-active button .slick-dot-icon {
+  color: white;
+}
+
+/* Customize Previous/Next/Dots/Autoplay - Active State */
+
+.slick-next:focus .slick-next-icon,
+.slick-next:focus .slick-prev-icon,
+.slick-prev:focus .slick-next-icon,
+.slick-prev:focus .slick-prev-icon,
+.slick-dots li button:focus .slick-dot-icon:before,
+.slick-dots li.slick-active button:focus .slick-dot-icon,
+.slick-autoplay-toggle-button:focus 
+{
+    color:black;
+}
+
+/* history content page */
+
+
+
+section#historycontent{
+    background: black;
+}
+
+section#historycontent table{
+    width: 70em;
+    border: 4;
+}
+
+/* faq content page */
+
+section#faqcontent{
+    background: black;
+}
